@@ -1,0 +1,336 @@
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\django-blog-post\website\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\django-blog-post\website\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\panels\templates\panel.py", line 44, in _request_context_bind_template
+    processors = (template.engine.template_context_processors +
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\engine.py", line 85, in template_context_processors
+    return tuple(import_string(path) for path in context_processors)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\engine.py", line 85, in <genexpr>
+    return tuple(import_string(path) for path in context_processors)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'utils'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\middleware.py", line 132, in process_response
+    panel.generate_stats(request, response)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\panels\staticfiles.py", line 128, in generate_stats
+    'staticfiles_finders': self.get_staticfiles_finders(),
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\panels\staticfiles.py", line 139, in get_staticfiles_finders
+    for path, finder_storage in finder.list([]):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\contrib\staticfiles\finders.py", line 131, in list
+    for path in utils.get_files(storage, ignore_patterns):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\contrib\staticfiles\utils.py", line 23, in get_files
+    directories, files = storage.listdir(location)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\files\storage.py", line 315, in listdir
+    for entry in os.scandir(path):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\david\\Desktop\\dev\\blog\\django-blog-post\\template\\static'
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\middleware.py", line 132, in process_response
+    panel.generate_stats(request, response)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\panels\staticfiles.py", line 128, in generate_stats
+    'staticfiles_finders': self.get_staticfiles_finders(),
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\panels\staticfiles.py", line 139, in get_staticfiles_finders
+    for path, finder_storage in finder.list([]):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\contrib\staticfiles\finders.py", line 131, in list
+    for path in utils.get_files(storage, ignore_patterns):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\contrib\staticfiles\utils.py", line 23, in get_files
+    directories, files = storage.listdir(location)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\files\storage.py", line 315, in listdir
+    for entry in os.scandir(path):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\david\\Desktop\\dev\\blog\\django-blog-post\\template\\static'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\panels\templates\panel.py", line 44, in _request_context_bind_template
+    processors = (template.engine.template_context_processors +
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\engine.py", line 85, in template_context_processors
+    return tuple(import_string(path) for path in context_processors)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\engine.py", line 85, in <genexpr>
+    return tuple(import_string(path) for path in context_processors)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'utils'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\middleware.py", line 134, in process_response
+    bits[-2] += toolbar.render_toolbar()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\toolbar.py", line 64, in render_toolbar
+    return render_to_string('debug_toolbar/base.html', context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\panels\templates\panel.py", line 44, in _request_context_bind_template
+    processors = (template.engine.template_context_processors +
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\engine.py", line 85, in template_context_processors
+    return tuple(import_string(path) for path in context_processors)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\engine.py", line 85, in <genexpr>
+    return tuple(import_string(path) for path in context_processors)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'utils'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\middleware.py", line 134, in process_response
+    bits[-2] += toolbar.render_toolbar()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\toolbar.py", line 64, in render_toolbar
+    return render_to_string('debug_toolbar/base.html', context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+C:\Users\david\Desktop\dev\blog\django-blog-post\website\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\panels\templates\panel.py", line 44, in _request_context_bind_template
+    processors = (template.engine.template_context_processors +
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\engine.py", line 85, in template_context_processors
+    return tuple(import_string(path) for path in context_processors)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\engine.py", line 85, in <genexpr>
+    return tuple(import_string(path) for path in context_processors)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'utils'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\panels\templates\panel.py", line 44, in _request_context_bind_template
+    processors = (template.engine.template_context_processors +
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\engine.py", line 85, in template_context_processors
+    return tuple(import_string(path) for path in context_processors)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\engine.py", line 85, in <genexpr>
+    return tuple(import_string(path) for path in context_processors)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'utils'
+C:\Users\david\Desktop\dev\blog\django-blog-post\website\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /static/fonts/fontawesome-all.min.css
+Not Found: /static/js/csrf.js
+Not Found: /static/bootstrap/css/bootstrap.min.css
+Not Found: /static/bootstrap/js/bootstrap.min.js
+Not Found: /static/js/jquery.min.js
+Not Found: /static/js/eldarion-ajax.min.js
+Not Found: /static/bootstrap/js/bootstrap.min.js
+Not Found: /static/js/eldarion-ajax.min.js
+Not Found: /static/js/csrf.js
+C:\Users\david\Desktop\dev\blog\django-blog-post\website\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\django-blog-post\website\settings\dev.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\django-blog-post\website\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
