@@ -1,5 +1,5 @@
 # drf-blog-post
-Simple api for a Django blogging app for testing my new module post
+Basic REST API for a Django blogging app. Use for testing my new module post.
 
  ![blog](https://github.com/kkosiba/blog-django/blob/master/pics/main.png)
 
@@ -11,18 +11,17 @@ Features
 	  posts for which they have permissions/ownership.
 	- admin: is superuser as usual.
 	- normal user can add comments and like posts
-3. Facebook comments.
-4. Tags.
-5. Post History.
-6. Search, year/month archives.
-7. Sort by post author, category, tags.
-8. Basic REST API provided by Django REST framework (available at `/api`).
-9. Contact us page (configurable).
+3. Basic REST API provided by Django REST framework
+4. Tags CRUD API.
+5. Category CRUD API
+6. Post CRUD API.
+7. Search, year/month archives.
+8. Sort posts by author, category, tags.
 
 
 Planned Modules
 ----------
-Blog pages
+Blog pages with React
 
 google analytics
 

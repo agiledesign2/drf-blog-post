@@ -1,0 +1,71 @@
+{% extends 'posts/post_base.html' %} 
+{% load crispy_forms_tags %}
+
+{% block head_title %} {% if update %}Update{% else %}Add{% endif %} Post {% endblock %}
+
+{% block content %}
+<div class="p-4 text-center m-auto">
+    <h3>{% if update %}Update{% else %}Add{% endif %} Post</h3>
+    <hr>
+    {% if form.errors %}
+        {% for error in form.category.errors %}
+            <small class="p-1 mb-3 text-center text-white bg-danger">{{ error }}</small>
+        {% endfor %}
+        {% for error in form.author.errors %}
+            <small class="p-1 mb-3 text-center text-white bg-danger">{{ error }}</small>
+        {% endfor %}
+        {% for error in form.title.errors %}
+            <small class="p-1 mb-3 text-center text-white bg-danger">{{ error }}</small>
+        {% endfor %}
+        {% for error in form.content.errors %}
+            <small class="p-1 mb-3 text-center text-white bg-danger">{{ error }}</small>
+        {% endfor %}
+        {% for error in form.tags.errors %}
+            <small class="p-1 mb-3 text-center text-white bg-danger">{{ error }}</small>
+        {% endfor %}
+    {% endif %}
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <!--<div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="font-weight-bold">{{ form.title.label_tag }}</label>
+                    {{ form.title }} <br>
+
+                    <label class="font-weight-bold">{{ form.category.label_tag }}</label>
+                    {{ form.category }}<br>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="font-weight-bold">{{ form.allow_comments.label_tag }}</label>
+                            {{ form.allow_comments }}
+                        </div>
+                        <div class="col-md-6">
+                            <label class="font-weight-bold">{{ form.status.label_tag }}</label>
+                            {{ form.status }}
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <label class="font-weight-bold">Comma separated tags:</label>
+                        {{ form.tags }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="font-weight-bold">{{ form.content.label_tag }}</label>
+                    {{ form.content }}
+                </div>
+            </div>
+        </div>-->
+        <input class="btn btn-primary" type="submit" value="Submit" />
+        <!--<div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn">Update</button>
+            </div>
+        </div>-->
+    </form>
+    {{ form.media }}
+</div>
+{% endblock %}

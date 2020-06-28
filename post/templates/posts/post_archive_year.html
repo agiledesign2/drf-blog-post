@@ -1,0 +1,12 @@
+{% extends 'posts/post_base.html' %} 
+
+{% block head_title %} Posts in {{ year|date:"Y" }} {% endblock %}
+
+{% block content %}
+    <h3>Archived posts in {{ year|date:"Y" }}:</h3>
+    <hr>
+    <!-- Generic post listing template -->
+    {% include 'blog/post_list_generic.html' %}
+    <!-- PAGINATION -->
+    {% include 'blog/pagination.html' %}
+{% endblock %}
