@@ -86,6 +86,11 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth'
+    'allauth',
+    'allauth.account',
+    'rest_auth.registration',
     #'taggit',
     #'taggit_templatetags2',
 
@@ -108,7 +113,8 @@ MIGRATION_MODULES = {
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#authentication-backends
 AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',
+    #'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#login-redirect-url
@@ -284,4 +290,22 @@ LOGGING = {
         }
     },
     "root": {"level": "INFO", "handlers": ["console", "file"]},
+}
+
+
+# Rest Framework
+# ------------------------------------------------------------------------------
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 
+        'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10,
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        #'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+        #'rest_framework.authentication.BasicAuthentication',
+    ),
 }
