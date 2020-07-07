@@ -91,6 +91,7 @@ THIRD_PARTY_APPS = [
     'allauth',
     'allauth.account',
     'rest_auth.registration',
+    'corsheaders',
     #'taggit',
     #'taggit_templatetags2',
 
@@ -156,8 +157,10 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    #'corsheaders.middleware.CorsPostCsrfMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     "django.middleware.common.BrokenLinkEmailsMiddleware",
@@ -309,3 +312,22 @@ REST_FRAMEWORK = {
         #'rest_framework.authentication.BasicAuthentication',
     ),
 }
+
+# Django-Cors-Headers
+# ------------------------------------------------------------------------------
+CORS_ORIGIN_ALLOW_ALL = True  
+# CORS_ALLOW_CREDENTIALS = True
+# CORS_ORIGIN_WHITELIST = [
+#     '*',
+# ]
+#CORS_ORIGIN_WHITELIST = [
+#    'http://read.only.com',
+#    'http://change.allowed.com',
+#]
+#CSRF_TRUSTED_ORIGINS = [
+#    'change.allowed.com',
+#]
+#CORS_ORIGIN_REGEX_WHITELIST = [
+#    r"^https://\w+\.example\.com$",
+#]
+SESSION_COOKIE_SAMESITE = None

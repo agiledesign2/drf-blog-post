@@ -1,0 +1,16 @@
+We've built a basic Django application / API and now need to integrate the HTML/CSS templates.
+
+We have already created the API and the HTML/CSS templates (HTML preview is available here: https://rebrand.ly/904c7), your task is to integrate the HTML/CSS with the API.
+
+A summary of the tasks:
+- Load and display list of Entities using GET /v1/entities/ endpoint
+- Enable search of Entities using GET /v1/entities/ endpoint
+- Implement form workflow, with final review + submission to POST /v1/notifications/
+- Implement Google Places API search
+- Add JS tracking tags (using Segment.io tracking code)
+
+We would also like to integrate Firebase Auth at the final stage of the user journey.
+
+This is quite an urgent task, so I appreciate if you can provide information on time estimate.
+
+Thanks 
