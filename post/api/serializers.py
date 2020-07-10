@@ -44,11 +44,32 @@ class PostListSerializer(serializers.ModelSerializer):
         view_name="post-detail", lookup_field="slug"
     )
     author = AuthorListingField(queryset=User.objects.all())
+    category = CategoryListingField(queryset=Category.objects.all(), many=True)
     published = serializers.DateTimeField(format="%a, %d %b  %I:%M %p")
 
     class Meta:
         model = Post
-        fields = ("url", "title", "published", "author")
+        fields = (
+            "url",
+            "title",
+            "category",
+            "content",
+            "published",
+            "author",
+            "status",
+        )
+
+    def create(self, validated_data):
+        title = validated_data.get("title", "")
+        validated_data["slug"] = slugify(title)
+        # pops out the list of categories
+        categories = validated_data.pop("category")
+        # and saves the rest of the data
+        post = Post.objects.create(**validated_data)
+        # add categories separately
+        for category in categories:
+            post.category.add(category)
+        return post
 
 
 class PostDetailSerializer(serializers.ModelSerializer):
@@ -70,6 +91,21 @@ class PostDetailSerializer(serializers.ModelSerializer):
             "author",
             "status",
         )
+
+    def update(self, instance, validated_data):
+        instance.title = validated_data.get("title", instance.title)
+        instance.slug = slugify(instance.title)
+
+        categories = validated_data.get("category")
+        # deassociate existing categories from instance
+        instance.category.clear()
+        for category in categories:
+            instance.category.add(category)
+
+        instance.author = self.context.get("request").user
+        instance.content = validated_data.get("content", instance.content)
+        instance.save()
+        return instance
 
 
 class PostCreateUpdateSerializer(serializers.ModelSerializer):

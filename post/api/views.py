@@ -11,12 +11,12 @@ from posts.models import Post
 from .serializers import *
 from .pagination import *
 
-
+"""
 class PostViewSet(viewsets.ModelViewSet):
-    """
-    This viewset automatically provides `list`, `create`, `retrieve`,
-    `update` and `destroy` actions.
-    """
+    #
+    #This viewset automatically provides `list`, `create`, `retrieve`,
+    #`update` and `destroy` actions.
+    #
 
     queryset = Post.objects.all()
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
@@ -40,8 +40,44 @@ class PostViewSet(viewsets.ModelViewSet):
 
     def perform_update(self, serializer):
         serializer.save(author=self.request.user)
+"""
+
+class PostList(generics.ListCreateAPIView):
+    queryset = Post.objects.all()
+    serializer_class = PostListSerializer
+    name = 'Post-list'
+    filter_fields = (
+        'title',
+        )
+    search_fields = (
+        '^title',
+        )
+    ordering_fields = (
+        'title',
+        )
 
 
+class PostDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Post.objects.all()
+    serializer_class = PostDetailSerializer
+    name = 'Post-detail'
+    filter_fields = (
+        'title',
+        )
+    search_fields = (
+        '^title',
+        )
+    ordering_fields = (
+        'title',
+        )
+
+    def retrieve(self, request, *args, **kwargs):
+        instance = self.get_object()
+        Post.objects.filter(pk=instance.id).update(views_count=F('views_count') + 1)
+        serializer = self.get_serializer(instance)
+        return Response(serializer.data)
+
+"""
 class UserViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
@@ -50,3 +86,4 @@ class UserViewSet(viewsets.ReadOnlyModelViewSet):
     search_fields = ["username"]
 
     pagination_class = UserPageNumberPagination
+"""
