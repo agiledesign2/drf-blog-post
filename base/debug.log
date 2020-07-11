@@ -1,0 +1,1784 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\website\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\website\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\website\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\website\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /api/v1/
+Forbidden: /api/v1/post-list/
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Not Found: /api/v1/
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: post_post
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\pagination.py", line 206, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\paginator.py", line 70, in page
+    number = self.validate_number(number)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\paginator.py", line 48, in validate_number
+    if number > self.num_pages:
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\paginator.py", line 97, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\paginator.py", line 91, in count
+    return c()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\query.py", line 392, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\sql\query.py", line 504, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\sql\query.py", line 489, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\sql\compiler.py", line 1140, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 164, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 106, in _record
+    return method(sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: post_post
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/v1/post-detail/
+Bad Request: /api/v1/post-list/
+Internal Server Error: /admin/post/post/add/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 188, in render
+    return template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 993, in render
+    return render_value_in_context(output, context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 972, in render_value_in_context
+    value = str(value)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\html.py", line 388, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\boundfield.py", line 33, in __str__
+    return self.as_widget()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\boundfield.py", line 93, in as_widget
+    renderer=self.form.renderer,
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\markdownx\widgets.py", line 51, in render
+    return super(MarkdownxWidget, self).render(name, value, attrs, renderer)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\widgets.py", line 242, in render
+    return self._render(self.template_name, context, renderer)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\widgets.py", line 247, in _render
+    return mark_safe(renderer.render(template_name, context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\renderers.py", line 30, in render
+    template = self.get_template(template_name)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\renderers.py", line 70, in get_template
+    return get_template(template_name)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: markdownx/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: markdownx/widget.html
+Internal Server Error: /admin/post/post/add/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 188, in render
+    return template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 993, in render
+    return render_value_in_context(output, context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 972, in render_value_in_context
+    value = str(value)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\html.py", line 388, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\boundfield.py", line 33, in __str__
+    return self.as_widget()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\boundfield.py", line 93, in as_widget
+    renderer=self.form.renderer,
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\markdownx\widgets.py", line 51, in render
+    return super(MarkdownxWidget, self).render(name, value, attrs, renderer)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\widgets.py", line 242, in render
+    return self._render(self.template_name, context, renderer)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\widgets.py", line 247, in _render
+    return mark_safe(renderer.render(template_name, context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\renderers.py", line 30, in render
+    template = self.get_template(template_name)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\renderers.py", line 70, in get_template
+    return get_template(template_name)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: markdownx/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: markdownx/widget.html
+Internal Server Error: /admin/post/post/add/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 188, in render
+    return template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 993, in render
+    return render_value_in_context(output, context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 972, in render_value_in_context
+    value = str(value)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\html.py", line 388, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\boundfield.py", line 33, in __str__
+    return self.as_widget()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\boundfield.py", line 93, in as_widget
+    renderer=self.form.renderer,
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\markdownx\widgets.py", line 51, in render
+    return super(MarkdownxWidget, self).render(name, value, attrs, renderer)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\widgets.py", line 242, in render
+    return self._render(self.template_name, context, renderer)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\widgets.py", line 247, in _render
+    return mark_safe(renderer.render(template_name, context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\renderers.py", line 30, in render
+    template = self.get_template(template_name)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\renderers.py", line 70, in get_template
+    return get_template(template_name)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: markdownx/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: markdownx/widget.html
+Internal Server Error: /admin/post/post/add/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 188, in render
+    return template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 993, in render
+    return render_value_in_context(output, context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 972, in render_value_in_context
+    value = str(value)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\html.py", line 388, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\boundfield.py", line 33, in __str__
+    return self.as_widget()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\boundfield.py", line 93, in as_widget
+    renderer=self.form.renderer,
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\markdownx\widgets.py", line 51, in render
+    return super(MarkdownxWidget, self).render(name, value, attrs, renderer)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\widgets.py", line 242, in render
+    return self._render(self.template_name, context, renderer)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\widgets.py", line 247, in _render
+    return mark_safe(renderer.render(template_name, context))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\renderers.py", line 30, in render
+    template = self.get_template(template_name)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\forms\renderers.py", line 70, in get_template
+    return get_template(template_name)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: markdownx/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: markdownx/widget.html
+Not Found: /static/markdownx/js/markdownx.js
+Not Found: /static/markdownx/js/markdownx.js
+C:\Users\david\Desktop\dev\blog\drf-blog-post\website\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /markdownx/markdownify/
+Not Found: /markdownx/markdownify/
+Watching for file changes with StatReloader
+Not Found: /markdownx/markdownify/
+C:\Users\david\Desktop\dev\blog\drf-blog-post\website\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-detail/1/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post-detail' not found. 'post-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 282, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 79, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 562, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "post-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+Not Found: /api/v1/post-detail/0/
+Internal Server Error: /api/v1/post-detail/1/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post-detail' not found. 'post-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 282, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 79, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 562, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "post-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-detail/1/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post-detail' not found. 'post-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 282, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 79, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 562, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "post-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+Internal Server Error: /api/v1/post-detail/2/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post-detail' not found. 'post-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 282, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 79, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 562, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "post-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post-detail' not found. 'post-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "post-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 329, in get_url
+    lookup_value = getattr(obj, self.lookup_field)
+AttributeError: 'Post' object has no attribute 'url'
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post-detail' not found. 'post-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "post-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'api'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'api' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "api:post-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post-detail' not found. 'post-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "post:post-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post-detail' not found. 'post-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "post-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'post-detail/<int'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'post-detail/<int' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "post-detail/<int:id>". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 514, in to_representation
+    for field in fields:
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 375, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 1038, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 1139, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'url' was declared on serializer PostListSerializer, but has not been included in the 'fields' option.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post-detail' not found. 'post-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "post-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post-detail' not found. 'post-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "post-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post-detail' not found. 'post-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "post-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 393, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 331, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post-detail' not found. 'post-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 408, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "post-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-detail/gfgk/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 282, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 76, in retrieve
+    instance = self.get_object()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 92, in get_object
+    (self.__class__.__name__, lookup_url_kwarg)
+AssertionError: Expected view PostDetail to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-detail/gfgk/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 282, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 76, in retrieve
+    instance = self.get_object()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 92, in get_object
+    (self.__class__.__name__, lookup_url_kwarg)
+AssertionError: Expected view PostDetail to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 64, in list
+    return Response(serializer.data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 373, in to_representation
+    "the serializer." % self.__class__.__name__
+AssertionError: `HyperlinkedIdentityField` requires the request in the serializer context. Add `context={'request': request}` when instantiating the serializer.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 65, in list
+    return Response(serializer.data, context= context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\relations.py", line 373, in to_representation
+    "the serializer." % self.__class__.__name__
+AssertionError: `HyperlinkedIdentityField` requires the request in the serializer context. Add `context={'request': request}` when instantiating the serializer.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/v1/post-list/
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: post_post.author_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py", line 98, in create
+    post = Post.objects.create(**validated_data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\sql\compiler.py", line 1375, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 164, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 106, in _record
+    return method(sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: post_post.author_id
+Bad Request: /api/v1/post-list/
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 68, in perform_create
+    serializer.save(user=self.request.user)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py", line 98, in create
+    post = Post.objects.create(**validated_data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\query.py", line 420, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\base.py", line 501, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: Post() got an unexpected keyword argument 'user'
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/v1/post-list/
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader

@@ -91,14 +91,17 @@ THIRD_PARTY_APPS = [
     'allauth',
     'allauth.account',
     'rest_auth.registration',
+    'markdownx',
     'corsheaders',
-    #'taggit',
+    'taggit',
+    'taggit_serializer',
     #'taggit_templatetags2',
 
 ]
 
 LOCAL_APPS = [
     # Your stuff: custom apps go here
+    'post',
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

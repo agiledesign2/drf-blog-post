@@ -2,7 +2,9 @@ from django.contrib.auth.models import User
 from django.utils.text import slugify
 from rest_framework import serializers
 from rest_framework.fields import CurrentUserDefault
-from posts.models import Post, Category
+from post.models import Post, Category
+from taggit_serializer.serializers import (TagListSerializerField,
+                                           TaggitSerializer)
 
 
 # model listings
@@ -39,25 +41,53 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = ("name",)
 
 
-class PostListSerializer(serializers.ModelSerializer):
+class PostListSerializer(TaggitSerializer, serializers.ModelSerializer):
     url = serializers.HyperlinkedIdentityField(
-        view_name="post-detail", lookup_field="slug"
+        view_name="post:post-detail", lookup_field="slug"
     )
     author = AuthorListingField(queryset=User.objects.all())
     category = CategoryListingField(queryset=Category.objects.all(), many=True)
     published = serializers.DateTimeField(format="%a, %d %b  %I:%M %p")
+    tags = TagListSerializerField()
 
     class Meta:
         model = Post
-        fields = (
+        fields = [
             "url",
             "title",
             "category",
             "content",
+            "description",
+            "cover",
             "published",
+            "allow_comments",
             "author",
             "status",
-        )
+            "views_count",
+            "tags",
+        ]
+        read_only_field = ["published"]
+
+
+class PostCreateSerializer(TaggitSerializer, serializers.ModelSerializer):
+    #author = AuthorListingField(queryset=User.objects.all())
+    category = CategoryListingField(queryset=Category.objects.all(), many=True)
+    #published = serializers.DateTimeField(format="%a, %d %b  %I:%M %p")
+    tags = TagListSerializerField()
+
+    class Meta:
+        model = Post
+        fields = [
+            "title",
+            "category",
+            "content",
+            "description",
+            "cover",
+            "allow_comments",
+            "status",
+            "tags",
+        ]
+        #read_only_fields = ["published"]
 
     def create(self, validated_data):
         title = validated_data.get("title", "")
@@ -72,13 +102,14 @@ class PostListSerializer(serializers.ModelSerializer):
         return post
 
 
-class PostDetailSerializer(serializers.ModelSerializer):
+class PostDetailSerializer(TaggitSerializer, serializers.ModelSerializer):
     url = serializers.HyperlinkedIdentityField(
-        view_name="post-detail", lookup_field="slug"
+        view_name="post:post-detail", lookup_field="slug"
     )
     author = AuthorListingField(queryset=User.objects.all())
     category = CategoryListingField(queryset=Category.objects.all(), many=True)
     published = serializers.DateTimeField(format="%a, %d %b  %I:%M %p")
+    tags = TagListSerializerField()
 
     class Meta:
         model = Post
@@ -87,10 +118,16 @@ class PostDetailSerializer(serializers.ModelSerializer):
             "title",
             "category",
             "content",
+            "description",
+            "cover",
             "published",
+            "allow_comments",
             "author",
             "status",
+            "views_count",
+            "tags",
         )
+        read_only_fields = ['url', 'published', 'views_count','author']
 
     def update(self, instance, validated_data):
         instance.title = validated_data.get("title", instance.title)
@@ -109,9 +146,9 @@ class PostDetailSerializer(serializers.ModelSerializer):
 
 
 class PostCreateUpdateSerializer(serializers.ModelSerializer):
-    url = serializers.HyperlinkedIdentityField(
-        view_name="post-detail", lookup_field="slug"
-    )
+    #url = serializers.HyperlinkedIdentityField(
+    #    view_name="post-detail", lookup_field="slug"
+    #)
     author = serializers.HiddenField(default=CurrentUserDefault())
     category = CategoryListingField(queryset=Category.objects.all(), many=True)
     published = serializers.DateTimeField(
@@ -125,7 +162,9 @@ class PostCreateUpdateSerializer(serializers.ModelSerializer):
             "title",
             "category",
             "content",
-            "published",
+            "description",
+            "cover",
+            "allow_comments",
             "author",
             "status",
         )

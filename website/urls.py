@@ -13,9 +13,10 @@ from django.conf import settings
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('rest-auth/', include('rest_auth.urls')),
-    path('rest-auth/registration/', include('rest_auth.registration.urls'))
+    path('rest-auth/registration/', include('rest_auth.registration.urls')),
     #path("latest/feed/", LastEntriesFeed(), name="feed"),
-    #path("api/", include("post.api.urls")),  # REST api
+    path("api/v1/", include("post.api.urls")),  # REST api
+    path("markdownx/", include("markdownx.urls")),
     #path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
     #     name='django.contrib.sitemaps.views.sitemap')
 ]
