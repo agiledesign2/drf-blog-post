@@ -1782,3 +1782,345 @@ Watching for file changes with StatReloader
 Bad Request: /api/v1/post-list/
 C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden: /api/v1/post-list/
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 562, in data
+    ret = super().data
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 264, in data
+    self._data = self.get_initial()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 412, in get_initial
+    for field in self.fields.values()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 1038, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 1139, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'tags' was declared on serializer PostCreateSerializer, but has not been included in the 'fields' option.
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 68, in perform_create
+    serializer.save(author=self.request.user)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py", line 99, in create
+    post.tags.set(*tags)
+UnboundLocalError: local variable 'post' referenced before assignment
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 68, in perform_create
+    serializer.save(author=self.request.user)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py", line 105, in create
+    post.tags.set(*tags)
+AttributeError: 'list' object has no attribute 'set'
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 68, in perform_create
+    serializer.save(author=self.request.user)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py", line 105, in create
+    post.tags.add(*tags)
+AttributeError: 'list' object has no attribute 'add'
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\website\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 69, in perform_create
+    serializer.save_m2m()
+AttributeError: 'PostCreateSerializer' object has no attribute 'save_m2m'
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 69, in perform_create
+    serializer.save(author=self.request.user, request=request)
+NameError: name 'request' is not defined
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 69, in perform_create
+    serializer.save(author=self.request.user, request=self.request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py", line 98, in create
+    post = Post.objects.create(**validated_data)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\query.py", line 420, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\db\models\base.py", line 501, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: Post() got an unexpected keyword argument 'request'
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\request.py", line 409, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 69, in perform_create
+    serializer.save(author=self.request.user, tags=self.request.tags)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\request.py", line 411, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'tags'
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/v1/post-list/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 66, in list
+    serializer.data.filter(status=Post.STATUS_PUBLISHED)
+AttributeError: 'ReturnList' object has no attribute 'filter'
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
