@@ -7,7 +7,7 @@ from rest_framework.response import Response
 from rest_framework.reverse import reverse
 from rest_framework.filters import SearchFilter, OrderingFilter
 from django.db.models import F
-from .permissions import IsOwnerOrReadOnly
+from .permissions import IsOwnerOrReadOnly, IsOwner
 from post.models import Post
 from .serializers import *
 from .pagination import *
@@ -42,12 +42,11 @@ class PostViewSet(viewsets.ModelViewSet):
     def perform_update(self, serializer):
         serializer.save(author=self.request.user)
 """
-
-class PostList(generics.ListCreateAPIView):
+class Post(generics.ListCreateAPIView):
     queryset = Post.objects.all()
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly)
     serializer_class = PostCreateSerializer
-    name = 'post-list'
+    name = 'post'
     filter_fields = (
         'title',
         )
@@ -65,6 +64,33 @@ class PostList(generics.ListCreateAPIView):
         context={'request': request}
         serializer = PostListSerializer(queryset, many=True, context=context)
         return Response(serializer.data)
+
+    def perform_create(self, serializer):
+        serializer.save(author=self.request.user)
+
+
+class PostList(generics.ListCreateAPIView):
+    queryset = Post.objects.all()
+    permission_classes = (permissions.IsAdminUser, IsOwner)
+    serializer_class = PostCreateSerializer
+    name = 'post-list'
+    filter_fields = (
+        'title',
+        )
+    search_fields = (
+        '^title',
+        )
+    ordering_fields = (
+        'title',
+        )
+
+    #def list(self, request):
+        #super.(PostList, self).list()
+        # Note the use of `get_queryset()` instead of `self.queryset`
+    #    queryset = self.get_queryset()
+    #    context={'request': request}
+    #    serializer = PostListSerializer(queryset, many=True, context=context)
+    #    return Response(serializer.data)
 
     def perform_create(self, serializer):
         serializer.save(author=self.request.user)

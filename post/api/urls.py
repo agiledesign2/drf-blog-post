@@ -12,6 +12,10 @@ from post.api import views
 app_name = 'post'
 
 urlpatterns = [
+    path('post/',
+        views.Post.as_view(),
+        name=views.Post.name
+    ),
     path('post-list/',
         views.PostList.as_view(),
         name=views.PostList.name
