@@ -45,6 +45,7 @@ class PostViewSet(viewsets.ModelViewSet):
 
 class PostList(generics.ListCreateAPIView):
     queryset = Post.objects.all()
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
     serializer_class = PostCreateSerializer
     name = 'post-list'
     filter_fields = (
@@ -71,6 +72,7 @@ class PostList(generics.ListCreateAPIView):
 
 class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Post.objects.all()
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
     serializer_class = PostDetailSerializer
     lookup_field = 'slug'
     name = 'post-detail'
