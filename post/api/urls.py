@@ -16,10 +16,6 @@ urlpatterns = [
         views.Post.as_view(),
         name=views.Post.name
     ),
-    path('post-list/',
-        views.PostList.as_view(),
-        name=views.PostList.name
-    ),
     path('post-detail/<str:slug>/',
         views.PostDetail.as_view(),
         name=views.PostDetail.name

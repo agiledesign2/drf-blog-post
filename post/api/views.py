@@ -44,7 +44,7 @@ class PostViewSet(viewsets.ModelViewSet):
 """
 class Post(generics.ListCreateAPIView):
     queryset = Post.objects.all()
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly, permissions.IsAdminUser)
     serializer_class = PostCreateSerializer
     name = 'post'
     filter_fields = (
@@ -57,6 +57,12 @@ class Post(generics.ListCreateAPIView):
         'title',
         )
 
+    def get_queryset(self):
+        if self.request.user.is_staff:
+            return Post.objects.all()
+        else:
+            return Post.objects.published()
+
     def list(self, request):
         #super.(PostList, self).list()
         # Note the use of `get_queryset()` instead of `self.queryset`
@@ -64,33 +70,6 @@ class Post(generics.ListCreateAPIView):
         context={'request': request}
         serializer = PostListSerializer(queryset, many=True, context=context)
         return Response(serializer.data)
-
-    def perform_create(self, serializer):
-        serializer.save(author=self.request.user)
-
-
-class PostList(generics.ListCreateAPIView):
-    queryset = Post.objects.all()
-    permission_classes = (permissions.IsAdminUser, IsOwner)
-    serializer_class = PostCreateSerializer
-    name = 'post-list'
-    filter_fields = (
-        'title',
-        )
-    search_fields = (
-        '^title',
-        )
-    ordering_fields = (
-        'title',
-        )
-
-    #def list(self, request):
-        #super.(PostList, self).list()
-        # Note the use of `get_queryset()` instead of `self.queryset`
-    #    queryset = self.get_queryset()
-    #    context={'request': request}
-    #    serializer = PostListSerializer(queryset, many=True, context=context)
-    #    return Response(serializer.data)
 
     def perform_create(self, serializer):
         serializer.save(author=self.request.user)
