@@ -13,8 +13,8 @@ app_name = 'post'
 
 urlpatterns = [
     path('post/',
-        views.Post.as_view(),
-        name=views.Post.name
+        views.PostList.as_view(),
+        name=views.PostList.name
     ),
     path('post-detail/<str:slug>/',
         views.PostDetail.as_view(),

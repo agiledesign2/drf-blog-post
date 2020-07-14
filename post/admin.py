@@ -65,7 +65,8 @@ class PostAdmin(admin.ModelAdmin):	#(ImportExportModelAdmin):
         if (obj.published is None
                 and obj.status in [Post.STATUS_PUBLISHED]):
             obj.published = timezone.now()
-        if change:
+        #if change:
+        else:
             obj.updated = timezone.now()
         super(PostAdmin, self).save_model(request, obj, form, change)
 

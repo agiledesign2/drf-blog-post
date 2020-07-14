@@ -7,55 +7,25 @@ from rest_framework.response import Response
 from rest_framework.reverse import reverse
 from rest_framework.filters import SearchFilter, OrderingFilter
 from django.db.models import F
-from .permissions import IsOwnerOrReadOnly, IsOwner
+from .permissions import IsOwnerOrReadOnly
 from post.models import Post
 from .serializers import *
 from .pagination import *
 
-"""
-class PostViewSet(viewsets.ModelViewSet):
-    #
-    #This viewset automatically provides `list`, `create`, `retrieve`,
-    #`update` and `destroy` actions.
-    #
-
-    queryset = Post.objects.all()
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
-    lookup_field = "slug"
-
-    filter_backends = [SearchFilter, OrderingFilter]
-    search_fields = ["category__name", "author__username", "title", "content"]
-
-    # pagination_class = PostPageNumberPagination # works fine
-
-    def get_serializer_class(self):
-        if self.action == "retrieve":
-            return PostDetailSerializer
-        elif self.action == "create" or self.action == "update":
-            return PostCreateUpdateSerializer
-        else:
-            return PostListSerializer
-
-    def perform_create(self, serializer):
-        serializer.save(author=self.request.user)
-
-    def perform_update(self, serializer):
-        serializer.save(author=self.request.user)
-"""
-class Post(generics.ListCreateAPIView):
+class PostList(generics.ListCreateAPIView):
     queryset = Post.objects.all()
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, permissions.IsAdminUser)
     serializer_class = PostCreateSerializer
     name = 'post'
     filter_fields = (
         'title',
-        )
+    )
     search_fields = (
         '^title',
-        )
+    )
     ordering_fields = (
         'title',
-        )
+    )
 
     def get_queryset(self):
         if self.request.user.is_staff:
@@ -83,13 +53,13 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     name = 'post-detail'
     filter_fields = (
         'title',
-        )
+    )
     search_fields = (
         '^title',
-        )
+    )
     ordering_fields = (
         'title',
-        )
+    )
 
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
