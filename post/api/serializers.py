@@ -1,6 +1,8 @@
 from django.contrib.auth.models import User
+from django.utils import timezone
 from django.utils.text import slugify
 from rest_framework import serializers
+from django.utils.crypto import get_random_string
 from rest_framework.fields import CurrentUserDefault
 from post.models import Post, Category
 from taggit_serializer.serializers import (TagListSerializerField,
@@ -91,7 +93,17 @@ class PostCreateSerializer(TaggitSerializer, serializers.ModelSerializer):
 
     def create(self, validated_data):
         title = validated_data.get("title", "")
-        validated_data["slug"] = slugify(title)
+        slug = slugify(title)
+        validated_data["slug"] = slug
+        # check if there exists a post with existing slug
+        q = Post.objects.filter(slug=slug)
+        if q.exists():
+            slug = "-".join([slug, get_random_string(4, "0123456789")])
+        
+        if validated_data.get("status", "") in [Post.STATUS_PUBLISHED]:
+            validated_data["published"] = timezone.now()
+        else:
+            validated_data["updated"] = timezone.now()
         # pops out the list of categories
         categories = validated_data.pop("category")
         # and saves the rest of the data
