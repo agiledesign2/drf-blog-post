@@ -106,13 +106,14 @@ class PostCreateSerializer(TaggitSerializer, serializers.ModelSerializer):
         else:
             validated_data["updated"] = timezone.now()
         # pops out the list of categories
-        categories = validated_data.pop("category")
+        #categories = validated_data.pop("category")
         # and saves the rest of the data
-        post = Post.objects.create(**validated_data)
+        #post = Post.objects.create(**validated_data)
         # add categories separately
-        for category in categories:
-            post.category.add(category)
-        return post
+        #for category in categories:
+        #    post.category.add(category)
+        #return post
+        return super().create(validated_data)
 
     def update(self, instance, validated_data):
         instance.title = validated_data.get("title", instance.title)
@@ -130,16 +131,16 @@ class PostCreateSerializer(TaggitSerializer, serializers.ModelSerializer):
         else:
             instance.updated = timezone.now()
 
-        categories = validated_data.get("category")
+        #categories = validated_data.get("category")
         # deassociate existing categories from instance
-        instance.category.clear()
-        for category in categories:
-            instance.category.add(category)
+        #instance.category.clear()
+        #for category in categories:
+        #    instance.category.add(category)
 
-        instance.author = self.context.get("request").user
-        instance.content = validated_data.get("content", instance.content)
-        instance.save()
-        return instance
+        #instance.author = self.context.get("request").user
+        #instance.content = validated_data.get("content", instance.content)
+        #instance.save()
+        return super(PostCreateSerializer, self).update(instance, validated_data)
 
 
 class PostDetailSerializer(TaggitSerializer, serializers.ModelSerializer):
