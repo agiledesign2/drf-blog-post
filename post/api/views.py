@@ -33,6 +33,12 @@ class PostList(generics.ListCreateAPIView):
         else:
             return Post.objects.published()
 
+    def get_serializer_class(self):
+        if self.request.method == 'POST':
+            return PostCreateSerializer
+        else:
+            return PostListSerializer
+
     def list(self, request):
         #super.(PostList, self).list()
         # Note the use of `get_queryset()` instead of `self.queryset`
@@ -60,6 +66,12 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     ordering_fields = (
         'title',
     )
+
+    def get_serializer_class(self):
+        if self.request.method == 'PUT':
+            return PostCreateSerializer
+        else:
+            return PostListSerializer
 
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()

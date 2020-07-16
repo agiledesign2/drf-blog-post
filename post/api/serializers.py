@@ -49,7 +49,7 @@ class PostListSerializer(TaggitSerializer, serializers.ModelSerializer):
     )
     author = AuthorListingField(queryset=User.objects.all())
     category = CategoryListingField(queryset=Category.objects.all(), many=True)
-    published = serializers.DateTimeField(format="%a, %d %b  %I:%M %p", read_only=True)
+    published = serializers.DateTimeField(format="%a, %d %b  %I:%M %p")
     tags = TagListSerializerField()
 
     class Meta:
@@ -68,7 +68,7 @@ class PostListSerializer(TaggitSerializer, serializers.ModelSerializer):
             "views_count",
             "tags",
         ]
-        read_only_fields = ["views_count"]
+        #read_only_fields = ["views_count"]
 
 
 class PostCreateSerializer(TaggitSerializer, serializers.ModelSerializer):
@@ -118,9 +118,10 @@ class PostCreateSerializer(TaggitSerializer, serializers.ModelSerializer):
         instance.title = validated_data.get("title", instance.title)
         slug = slugify(instance.title)
         # check if there exists a post with existing slug
-        q = Post.objects.filter(slug=slug)
-        if q.exists():
-            slug = "-".join([slug, get_random_string(4, "0123456789")])
+        if instance.slug not in slug:
+            q = Post.objects.filter(slug=slug)
+            if q.exists():
+                slug = "-".join([slug, get_random_string(4, "0123456789")])
         
         instance.slug = slug
         
