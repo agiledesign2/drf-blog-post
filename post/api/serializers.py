@@ -49,7 +49,7 @@ class PostListSerializer(TaggitSerializer, serializers.ModelSerializer):
     )
     author = AuthorListingField(queryset=User.objects.all())
     category = CategoryListingField(queryset=Category.objects.all(), many=True)
-    published = serializers.DateTimeField(format="%a, %d %b  %I:%M %p")
+    published = serializers.DateTimeField(format="%a, %d %b  %I:%M %p", read_only=True)
     tags = TagListSerializerField()
 
     class Meta:
@@ -68,7 +68,7 @@ class PostListSerializer(TaggitSerializer, serializers.ModelSerializer):
             "views_count",
             "tags",
         ]
-        read_only_field = ["published"]
+        read_only_fields = ["views_count"]
 
 
 class PostCreateSerializer(TaggitSerializer, serializers.ModelSerializer):
@@ -94,12 +94,13 @@ class PostCreateSerializer(TaggitSerializer, serializers.ModelSerializer):
     def create(self, validated_data):
         title = validated_data.get("title", "")
         slug = slugify(title)
-        validated_data["slug"] = slug
         # check if there exists a post with existing slug
         q = Post.objects.filter(slug=slug)
         if q.exists():
             slug = "-".join([slug, get_random_string(4, "0123456789")])
-        
+
+        validated_data["slug"] = slug
+
         if validated_data.get("status", "") in [Post.STATUS_PUBLISHED]:
             validated_data["published"] = timezone.now()
         else:
@@ -113,6 +114,32 @@ class PostCreateSerializer(TaggitSerializer, serializers.ModelSerializer):
             post.category.add(category)
         return post
 
+    def update(self, instance, validated_data):
+        instance.title = validated_data.get("title", instance.title)
+        slug = slugify(instance.title)
+        # check if there exists a post with existing slug
+        q = Post.objects.filter(slug=slug)
+        if q.exists():
+            slug = "-".join([slug, get_random_string(4, "0123456789")])
+        
+        instance.slug = slug
+        
+        if validated_data.get("status", "") in [Post.STATUS_PUBLISHED]:
+            instance.published = timezone.now()
+        else:
+            instance.updated = timezone.now()
+
+        categories = validated_data.get("category")
+        # deassociate existing categories from instance
+        instance.category.clear()
+        for category in categories:
+            instance.category.add(category)
+
+        instance.author = self.context.get("request").user
+        instance.content = validated_data.get("content", instance.content)
+        instance.save()
+        return instance
+
 
 class PostDetailSerializer(TaggitSerializer, serializers.ModelSerializer):
     url = serializers.HyperlinkedIdentityField(
@@ -120,7 +147,7 @@ class PostDetailSerializer(TaggitSerializer, serializers.ModelSerializer):
     )
     author = AuthorListingField(queryset=User.objects.all())
     category = CategoryListingField(queryset=Category.objects.all(), many=True)
-    published = serializers.DateTimeField(format="%a, %d %b  %I:%M %p")
+    published = serializers.DateTimeField(format="%a, %d %b  %I:%M %p", read_only=True)
     tags = TagListSerializerField()
 
     class Meta:
@@ -139,63 +166,21 @@ class PostDetailSerializer(TaggitSerializer, serializers.ModelSerializer):
             "views_count",
             "tags",
         )
-        read_only_fields = ['url', 'published', 'views_count','author']
 
     def update(self, instance, validated_data):
         instance.title = validated_data.get("title", instance.title)
-        instance.slug = slugify(instance.title)
+        slug = slugify(instance.title)
+        # check if there exists a post with existing slug
+        q = Post.objects.filter(slug=slug)
+        if q.exists():
+            slug = "-".join([slug, get_random_string(4, "0123456789")])
+        
+        instance.slug = slug
 
-        categories = validated_data.get("category")
-        # deassociate existing categories from instance
-        instance.category.clear()
-        for category in categories:
-            instance.category.add(category)
-
-        instance.author = self.context.get("request").user
-        instance.content = validated_data.get("content", instance.content)
-        instance.save()
-        return instance
-
-
-class PostCreateUpdateSerializer(serializers.ModelSerializer):
-    #url = serializers.HyperlinkedIdentityField(
-    #    view_name="post-detail", lookup_field="slug"
-    #)
-    author = serializers.HiddenField(default=CurrentUserDefault())
-    category = CategoryListingField(queryset=Category.objects.all(), many=True)
-    published = serializers.DateTimeField(
-        format="%a, %d %b  %I:%M %p", read_only=True
-    )
-
-    class Meta:
-        model = Post
-        fields = (
-            "url",
-            "title",
-            "category",
-            "content",
-            "description",
-            "cover",
-            "allow_comments",
-            "author",
-            "status",
-        )
-
-    def create(self, validated_data):
-        title = validated_data.get("title", "")
-        validated_data["slug"] = slugify(title)
-        # pops out the list of categories
-        categories = validated_data.pop("category")
-        # and saves the rest of the data
-        post = Post.objects.create(**validated_data)
-        # add categories separately
-        for category in categories:
-            post.category.add(category)
-        return post
-
-    def update(self, instance, validated_data):
-        instance.title = validated_data.get("title", instance.title)
-        instance.slug = slugify(instance.title)
+        if validated_data.get("status", "") in [Post.STATUS_PUBLISHED]:
+            instance.published = timezone.now()
+        else:
+            instance.updated = timezone.now()
 
         categories = validated_data.get("category")
         # deassociate existing categories from instance

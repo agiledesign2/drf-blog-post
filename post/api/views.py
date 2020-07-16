@@ -15,7 +15,7 @@ from .pagination import *
 class PostList(generics.ListCreateAPIView):
     queryset = Post.objects.all()
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, permissions.IsAdminUser)
-    serializer_class = PostCreateSerializer
+    serializer_class = PostListSerializer
     name = 'post'
     filter_fields = (
         'title',

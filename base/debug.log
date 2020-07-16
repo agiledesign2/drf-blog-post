@@ -2173,3 +2173,72 @@ Traceback (most recent call last):
   File "C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py", line 62, in get_queryset
     return Post.objects.all()
 AttributeError: type object 'Post' has no attribute 'objects'
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /api/v1/post-detail/hola-mundo-post-1/
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /api/v1/post-list/
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
