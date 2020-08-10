@@ -137,7 +137,7 @@ class Post(models.Model):
         """
         Redirect to post detail view
         """
-        return reverse("posts:details_post", kwargs={"slug": self.slug})
+        return reverse("posts:detail_post", kwargs={"slug": self.slug})
 
     @property
     def formatted_markdown(self):

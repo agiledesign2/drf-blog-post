@@ -135,7 +135,7 @@ class ListByCategory(CategoryDatesMixin, ListView):
         return context
 
 
-class DetailsPost(CategoryDatesMixin, DetailView):
+class DetailPost(CategoryDatesMixin, DetailView):
     model = Post
     template_name = "posts/post_detail.html"
 

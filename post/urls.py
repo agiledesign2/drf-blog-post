@@ -18,7 +18,7 @@ urlpatterns = [
     path("tag/<str:tag>/", ListByTag.as_view(), name="tag"),
     path("category/<str:name>/", ListByCategory.as_view(), name="category"),
     path("author/<str:author>/", ListByAuthor.as_view(), name="author"),
-    path("<slug:slug>/", DetailsPost.as_view(), name="details_post"),
+    path("<slug:slug>/", DetailPost.as_view(), name="detail_post"),
     path("<slug:slug>/delete/", DeletePost.as_view(), name="delete_post"),
     path("<slug:slug>/update/", UpdatePost.as_view(), name="update_post"),
 ]
