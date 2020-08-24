@@ -2285,3 +2285,75 @@ Watching for file changes with StatReloader
 C:\Users\david\Desktop\dev\blog\drf-blog-post\post\api\serializers.py changed, reloading.
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /rest-auth/registration/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 202, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\renderers.py", line 686, in get_context
+    'description': self.get_description(view, response.status_code),
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\renderers.py", line 601, in get_description
+    return view.get_view_description(html=True)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 245, in get_view_description
+    return func(self, html)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 61, in get_view_description
+    return formatting.markup_description(description)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\utils\formatting.py", line 63, in markup_description
+    description = apply_markdown(description)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\compat.py", line 156, in apply_markdown
+    md_filter_add_syntax_highlight(md)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\compat.py", line 213, in md_filter_add_syntax_highlight
+    md.preprocessors.register(CodeBlockPreprocessor(), 'highlight', 40)
+AttributeError: 'OrderedDict' object has no attribute 'register'
+Watching for file changes with StatReloader
+Internal Server Error: /rest-auth/registration/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 202, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\renderers.py", line 686, in get_context
+    'description': self.get_description(view, response.status_code),
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\renderers.py", line 601, in get_description
+    return view.get_view_description(html=True)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 245, in get_view_description
+    return func(self, html)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\views.py", line 61, in get_view_description
+    return formatting.markup_description(description)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\utils\formatting.py", line 63, in markup_description
+    description = apply_markdown(description)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\compat.py", line 156, in apply_markdown
+    md_filter_add_syntax_highlight(md)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\rest_framework\compat.py", line 213, in md_filter_add_syntax_highlight
+    md.preprocessors.register(CodeBlockPreprocessor(), 'highlight', 40)
+AttributeError: 'OrderedDict' object has no attribute 'register'
+Watching for file changes with StatReloader
+Method Not Allowed: /rest-auth/registration/
+Method Not Allowed: /rest-auth/login/
+Bad Request: /rest-auth/login/
+Bad Request: /rest-auth/login/
+Bad Request: /rest-auth/login/
+Bad Request: /rest-auth/login/
+Bad Request: /rest-auth/login/
+Bad Request: /rest-auth/login/
+Bad Request: /rest-auth/login/
+Bad Request: /rest-auth/login/
+Bad Request: /rest-auth/login/
+Bad Request: /rest-auth/login/
